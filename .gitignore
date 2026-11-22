@@ -1,0 +1,8 @@
+*-debug.log
+firestore-debug.log
+.gradle/
+app/build/
+build/
+release-artifacts/
+*.keystore
+*.jks

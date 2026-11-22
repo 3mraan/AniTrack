@@ -1,0 +1,63 @@
+{
+  "databaseId": "ai-studio-android-stitchzi-6f1e76ea-78e6-40a9-bcba-d590a6744840",
+  "collections": {
+    "users/{userId}": {
+      "description": "Authenticated user profile and onboarding tutorial completion state",
+      "ownerField": "uid",
+      "fields": {
+        "uid": "string (1..128, immutable)",
+        "displayName": "string (1..100)",
+        "handle": "string (0..60)",
+        "bio": "string (0..500)",
+        "favoriteGenres": "list<string> (0..20)",
+        "tutorialCompleted": "boolean",
+        "createdAt": "timestamp (serverTimestamp, immutable)",
+        "updatedAt": "timestamp (serverTimestamp)"
+      }
+    },
+    "users/{userId}/library/{animeId}": {
+      "description": "Per-user anime library tracking entry",
+      "fields": {
+        "animeId": "string (1..80, immutable)",
+        "title": "string (1..200)",
+        "posterUrl": "string (0..500)",
+        "status": "string (WATCHING | COMPLETED | PLANNED | ON_HOLD | DROPPED)",
+        "watchedEpisodes": "int (0..5000)",
+        "currentSeason": "int (1..50)",
+        "inLibrary": "boolean",
+        "isFavorite": "boolean",
+        "reminderEnabled": "boolean",
+        "personalNotes": "string (0..2000)",
+        "createdAt": "timestamp (serverTimestamp, immutable)",
+        "updatedAt": "timestamp (serverTimestamp)"
+      }
+    },
+    "users/{userId}/reviews/{animeId}": {
+      "description": "Per-user anime rating and written review",
+      "fields": {
+        "animeId": "string (1..80, immutable)",
+        "overallRating": "number (1.0..10.0)",
+        "storyScore": "int (1..10)",
+        "animationScore": "int (1..10)",
+        "charactersScore": "int (1..10)",
+        "soundtrackScore": "int (1..10)",
+        "reviewText": "string (0..3000)",
+        "containsSpoilers": "boolean",
+        "createdAt": "timestamp (serverTimestamp, immutable)",
+        "updatedAt": "timestamp (serverTimestamp)"
+      }
+    },
+    "users/{userId}/watchlists/{watchlistId}": {
+      "description": "Per-user custom watchlists",
+      "fields": {
+        "id": "string (1..80, immutable)",
+        "name": "string (1..120)",
+        "description": "string (0..1000)",
+        "coverKey": "string (0..500)",
+        "animeIds": "list<string> (0..200)",
+        "createdAt": "timestamp (serverTimestamp, immutable)",
+        "updatedAt": "timestamp (serverTimestamp)"
+      }
+    }
+  }
+}

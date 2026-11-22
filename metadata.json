@@ -1,0 +1,6 @@
+{
+  "name": "AniTrack",
+  "description": "Track your anime library, episode progress, ratings, release calendar, custom watchlists, and watching statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

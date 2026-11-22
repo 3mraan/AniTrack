@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">AniTrack</string>
+    <string name="about_tagline">你的动漫，你的旅程。</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_library">片库</string>
+    <string name="nav_discover">发现</string>
+    <string name="nav_stats">统计</string>
+    <string name="nav_profile">我的</string>
+
+    <!-- Watch Statuses -->
+    <string name="status_watching">在看</string>
+    <string name="status_completed">已看完</string>
+    <string name="status_planned">想看</string>
+    <string name="status_on_hold">搁置</string>
+    <string name="status_dropped">抛弃</string>
+
+    <!-- Common Actions & Dialogs -->
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_close">关闭</string>
+    <string name="action_retry">重试</string>
+    <string name="action_reset">重置</string>
+    <string name="action_create">创建</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_delete">删除</string>
+    <string name="action_add">添加</string>
+    <string name="action_apply">应用</string>
+    <string name="action_back">返回</string>
+    <string name="action_all">全部</string>
+    <string name="loading_series">正在加载番剧…</string>
+
+    <!-- Authentication (Login & Create Account) -->
+    <string name="auth_sign_in_tab">登录</string>
+    <string name="auth_create_account_tab">创建账号</string>
+    <string name="auth_sign_in_headline">欢迎回来</string>
+    <string name="auth_sign_in_subtitle">登录以在多设备间同步你的动漫片库、剧集进度与个人片单。</string>
+    <string name="auth_create_headline">开启你的追番之旅</string>
+    <string name="auth_create_subtitle">创建你的 AniTrack 账号，从空白片库开始轻松记录每一集。</string>
+    <string name="auth_continue_google">使用 Google 继续</string>
+    <string name="auth_create_with_google">使用 Google 创建账号</string>
+    <string name="auth_signing_in">正在验证…</string>
+    <string name="auth_switch_to_create">新用户？创建账号</string>
+    <string name="auth_switch_to_login">已有账号？立即登录</string>
+    <string name="auth_feature_empty_start">从干净的空白片库开始，自由定制追番列表</string>
+    <string name="auth_feature_cloud_sync">通过 Firebase Firestore 加密云端备份</string>
+    <string name="auth_feature_multilingual">支持多语言与容错的智能动漫搜索</string>
+    <string name="auth_email_setup_title">邮箱与密码登录</string>
+    <string name="auth_email_setup_body">Google 登录已立即可用。如需同时启用原生邮箱密码登录，请在 Firebase 控制台中开启 Email/Password 提供程序 (Authentication → Sign-in method)。</string>
+    <string name="auth_cancelled">已取消登录，点击重试。</string>
+    <string name="auth_sign_out">退出登录</string>
+    <string name="auth_sign_out_subtitle">切换账号或锁定片库</string>
+
+    <!-- Post-Login Quick Tutorial -->
+    <string name="tutorial_badge">快速指南</string>
+    <string name="tutorial_step_counter">第 %1$d 步 / 共 %2$d 步</string>
+    <string name="tutorial_skip">跳过</string>
+    <string name="tutorial_next">下一步</string>
+    <string name="tutorial_previous">上一步</string>
+    <string name="tutorial_finish">开始使用</string>
+    <string name="tutorial_try_discover">浏览发现</string>
+    <string name="tutorial_step1_title">从零开始的个人片库</string>
+    <string name="tutorial_step1_body">你的个人片库初始完全为空，只记录你真正挑选的动漫。所有统计数据会随着你的使用自动更新。</string>
+    <string name="tutorial_step2_title">如何添加新动漫</string>
+    <string name="tutorial_step2_body">点击“发现”或“+ 搜索”图标，输入任意动漫名称（支持拼写容错或如 \"سولو ليفلنج\" 等别名），打开详情页后点击书签图标即可加入片库。</string>
+    <string name="tutorial_step3_title">如何记录已看剧集</string>
+    <string name="tutorial_step3_body">看完一集后，点击首页上的“+1 集”，或打开剧集追踪器逐集勾选与随时撤销。</string>
+    <string name="tutorial_replay_title">重播快速教程</string>
+    <string name="tutorial_replay_subtitle">回顾如何添加动漫与记录剧集</string>
+
+    <!-- Home Dashboard -->
+    <string name="greeting_evening">晚上好，%1$s</string>
+    <string name="greeting_user">晚上好，Ren</string>
+    <string name="your_journey">你的追番之旅</string>
+    <string name="full_stats">全部统计</string>
+    <string name="episodes_label">集数</string>
+    <string name="quick_add_anime">添加动漫</string>
+    <string name="quick_update_ep">更新剧集</string>
+    <string name="quick_browse">浏览</string>
+    <string name="continue_watching">继续观看</string>
+    <string name="track_all">追踪全部</string>
+    <string name="empty_watching_cta">在看队列为空。前往搜索或“发现”添加你的第一部动漫！</string>
+    <string name="recently_added">最近添加</string>
+    <string name="see_library">查看片库</string>
+    <string name="empty_recent_cta">尚未添加动漫。点击“添加动漫”开始构建你的片库。</string>
+    <string name="recommended_for_you">为你推荐</string>
+    <string name="pick_random">随机一部</string>
+    <string name="plus_one_episode">+1 集</string>
+    <string name="season_complete">本季已看完</string>
+    <string name="ep_progress_format">第 %1$d / %2$s 集</string>
+
+    <!-- Anime Library -->
+    <string name="library_title">片库</string>
+    <string name="library_series_count">已追踪 %1$d 部番剧</string>
+    <string name="library_search_hint">搜索片库（支持拼写容错与阿拉伯语）…</string>
+    <string name="all_genres">全部类型</string>
+    <string name="sort_recent">最近更新</string>
+    <string name="sort_highest_rated">评分最高</string>
+    <string name="sort_title_az">标题 A-Z</string>
+    <string name="sort_progress">进度 %</string>
+    <string name="empty_library_title">你的片库为空</string>
+    <string name="empty_library_subtitle">从“发现”或“搜索”中添加动漫，开始记录剧集、评分与片单。</string>
+    <string name="explore_discover">探索发现</string>
+    <string name="edit_anime_title">编辑 %1$s</string>
+    <string name="episodes_watched_label">已看集数（最多 %1$s）</string>
+    <string name="personal_notes_label">个人笔记</string>
+    <string name="remove_from_library">从片库移除</string>
+
+    <!-- Discover & Search -->
+    <string name="discover_title">发现</string>
+    <string name="discover_subtitle">由 AniList 提供支持 · 智能搜索</string>
+    <string name="discover_search_placeholder">搜索动漫（如 Solo Leveling 或 سولو ليفلنج）…</string>
+    <string name="browse_by_genre">按类型浏览</string>
+    <string name="trending_now">正在热播</string>
+    <string name="popular_anime">热门动漫</string>
+    <string name="top_rated_classics">高分经典</string>
+    <string name="seasonal_upcoming">当季与即将播出</string>
+    <string name="calendar_label">放送日历</string>
+    <string name="search_hint">输入任意番剧标题、错别字或阿拉伯语名称…</string>
+    <string name="search_anilist_chip">搜索 AniList</string>
+    <string name="genre_prefix">类型：%1$s</string>
+    <string name="format_prefix">格式：%1$s</string>
+    <string name="sort_rating_chip">排序：评分</string>
+    <string name="sort_popular_chip">排序：热度</string>
+    <string name="recent_label">最近：</string>
+    <string name="fuzzy_match_hint">已为 \"%1$s\" 应用智能匹配 → %2$s</string>
+    <string name="empty_search_title">未找到动漫</string>
+    <string name="empty_search_subtitle">尝试检查筛选条件或搜索其他标题。</string>
+    <string name="reset_filters">重置筛选</string>
+    <string name="error_search_title">连接中断</string>
+    <string name="error_search_subtitle">无法连接到动漫目录，请检查网络后重试。</string>
+    <string name="cached_results_fallback">正在显示 %1$d 条缓存结果 (%2$s)</string>
+    <string name="load_more_page">加载更多（第 %1$d 页）</string>
+
+    <!-- Details & Episode Tracker -->
+    <string name="details_community">社区评分</string>
+    <string name="details_your_rating">你的评分</string>
+    <string name="details_tap_to_rate">点击评分</string>
+    <string name="details_update_progress">更新进度 (%1$d/%2$s)</string>
+    <string name="details_synopsis">简介</string>
+    <string name="details_information">详细信息</string>
+    <string name="details_studio">制作公司</string>
+    <string name="details_source">原作</string>
+    <string name="details_duration">单集时长</string>
+    <string name="details_seasons">季数</string>
+    <string name="details_min_per_ep">%1$d 分钟 / 集</string>
+    <string name="details_add_note">添加笔记</string>
+    <string name="details_edit_note">编辑笔记</string>
+    <string name="details_no_notes">暂无个人笔记。</string>
+    <string name="details_personal_review">个人评价</string>
+    <string name="details_edit_review">编辑评价</string>
+    <string name="details_no_review">暂无文字评价。点击“编辑评价”为剧情、动画、角色与配乐评分。</string>
+    <string name="details_spoiler_warning">该评价标记为包含剧透</string>
+    <string name="details_reveal">显示</string>
+    <string name="details_similar_anime">相似动漫</string>
+    <string name="tracker_title">剧集追踪器</string>
+    <string name="tracker_mark_next">标记下一集</string>
+    <string name="tracker_all_watched">已全部看完</string>
+    <string name="tracker_episodes">剧集列表</string>
+    <string name="tracker_update_manually">手动更新进度</string>
+    <string name="tracker_empty_series">请先将动漫添加到片库再追踪剧集。</string>
+    <string name="autocomplete_title">已看到最后一集！</string>
+    <string name="autocomplete_body">你已看完 %1$s 的全部剧集，是否移至“已看完”？</string>
+    <string name="autocomplete_confirm">标为已看完</string>
+    <string name="autocomplete_keep">继续保持在看</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">统计</string>
+    <string name="stats_subtitle">根据你的片库实时计算</string>
+    <string name="stats_total_anime">动漫总数</string>
+    <string name="stats_episodes_watched">已看集数</string>
+    <string name="stats_average_rating">平均评分（共 %1$d 部已评）</string>
+    <string name="stats_status_distribution">观看状态分布</string>
+    <string name="stats_monthly_activity">月度观看活动</string>
+    <string name="stats_rating_distribution">评分分布</string>
+    <string name="stats_favorite_genres">最爱类型</string>
+    <string name="stats_highlights">亮点数据</string>
+    <string name="stats_highest_rated">最高评分</string>
+    <string name="stats_most_watched">观看最多</string>
+
+    <!-- Watchlists, Reviews, Calendar, Random Picker -->
+    <string name="watchlists_title">个人片单</string>
+    <string name="watchlists_create">创建片单</string>
+    <string name="watchlists_edit">编辑片单</string>
+    <string name="watchlists_empty">暂无自定义片单。点击“创建”来整理你喜爱的番剧。</string>
+    <string name="reviews_title">评分与评价</string>
+    <string name="reviews_overall">综合评分</string>
+    <string name="reviews_breakdown">分项评分</string>
+    <string name="reviews_story">剧情</string>
+    <string name="reviews_animation">作画</string>
+    <string name="reviews_characters">角色</string>
+    <string name="reviews_soundtrack">配乐</string>
+    <string name="reviews_written">文字短评</string>
+    <string name="reviews_contains_spoilers">包含剧透</string>
+    <string name="reviews_save">保存评价</string>
+    <string name="reviews_delete">删除评价</string>
+    <string name="calendar_title">放送日历</string>
+    <string name="picker_title">随机抽番</string>
+    <string name="picker_select_another">再抽一部</string>
+    <string name="picker_open_details">查看详情</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">个人主页</string>
+    <string name="profile_edit">编辑资料</string>
+    <string name="profile_display_name">显示名称</string>
+    <string name="profile_bio">个人简介</string>
+    <string name="profile_favorite_anime">最爱的动漫</string>
+    <string name="profile_collections">个人收藏夹</string>
+    <string name="profile_manage">管理</string>
+    <string name="profile_view_all">查看全部</string>
+    <string name="settings_title">设置</string>
+    <string name="settings_appearance">外观</string>
+    <string name="settings_theme_mode">主题模式</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_accent_color">强调色</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_label">应用语言</string>
+    <string name="settings_language_system">跟随系统语言（自动）</string>
+    <string name="settings_notifications">通知</string>
+    <string name="settings_episode_reminders">剧集更新提醒</string>
+    <string name="settings_episode_reminders_sub">在看的番剧更新新集时发送通知</string>
+    <string name="settings_release_notifications">新番开播通知</string>
+    <string name="settings_release_notifications_sub">当季首播与完结提醒</string>
+    <string name="settings_default_sorting">默认排序</string>
+    <string name="settings_default_view">默认视图</string>
+    <string name="settings_poster_grid">海报网格</string>
+    <string name="settings_list_view">列表视图</string>
+    <string name="settings_auto_status">自动状态建议</string>
+    <string name="settings_auto_status_sub">看到最后一集时提示标记为已看完</string>
+    <string name="settings_data">数据</string>
+    <string name="settings_export">导出片库</string>
+    <string name="settings_export_sub">将动漫列表和片单分享为 JSON</string>
+    <string name="settings_import">导入片库</string>
+    <string name="settings_import_sub">从 JSON 备份恢复番剧与片单</string>
+    <string name="settings_backup">备份设置</string>
+    <string name="settings_account">账号</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_app_version">应用版本</string>
+    <string name="settings_privacy">隐私政策</string>
+    <string name="settings_terms">服务条款</string>
+    <string name="settings_about_app">关于 AniTrack</string>
+</resources>

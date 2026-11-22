@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">AniTrack</string>
+    <string name="about_tagline">أنميك. رحلتك.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_library">المكتبة</string>
+    <string name="nav_discover">استكشاف</string>
+    <string name="nav_stats">الإحصائيات</string>
+    <string name="nav_profile">الملف</string>
+
+    <!-- Watch Statuses -->
+    <string name="status_watching">أشاهدها</string>
+    <string name="status_completed">مكتمل</string>
+    <string name="status_planned">مخطط له</string>
+    <string name="status_on_hold">موقوف</string>
+    <string name="status_dropped">متروك</string>
+
+    <!-- Common Actions & Dialogs -->
+    <string name="action_save">حفظ</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="action_reset">إعادة ضبط</string>
+    <string name="action_create">إنشاء</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_add">إضافة</string>
+    <string name="action_apply">تطبيق</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_all">الكل</string>
+    <string name="loading_series">جارٍ تحميل الأنمي…</string>
+
+    <!-- Authentication (Login & Create Account) -->
+    <string name="auth_sign_in_tab">تسجيل الدخول</string>
+    <string name="auth_create_account_tab">إنشاء حساب جديد</string>
+    <string name="auth_sign_in_headline">مرحباً بعودتك</string>
+    <string name="auth_sign_in_subtitle">سجّل الدخول لمزامنة مكتبة الأنمي وتقدم الحلقات وقوائم المشاهدة الخاصة بك.</string>
+    <string name="auth_create_headline">ابدأ رحلتك الآن</string>
+    <string name="auth_create_subtitle">أنشئ حسابك في AniTrack مع مكتبة فارغة تماماً لتضيف الأنمي وتتابع الحلقات بنفسك.</string>
+    <string name="auth_continue_google">المتابعة عبر جوجل</string>
+    <string name="auth_create_with_google">إنشاء حساب عبر جوجل</string>
+    <string name="auth_signing_in">جارٍ تسجيل الدخول…</string>
+    <string name="auth_switch_to_create">ليس لديك حساب؟ إنشاء حساب جديد</string>
+    <string name="auth_switch_to_login">لديك حساب بالفعل؟ تسجيل الدخول</string>
+    <string name="auth_feature_empty_start">تبدأ بمكتبة فارغة تضيف إليها أنمياتك المفضلة فقط</string>
+    <string name="auth_feature_cloud_sync">مزامنة سحابية آمنة عبر Firebase Firestore</string>
+    <string name="auth_feature_multilingual">بحث ذكي يدعم العربية والأخطاء الإملائية</string>
+    <string name="auth_email_setup_title">تسجيل الدخول بالبريد الإلكتروني وكلمة المرور</string>
+    <string name="auth_email_setup_body">التسجيل عبر جوجل مفعّل ومجهز بالكامل. لتفعيل خيار البريد الإلكتروني وكلمة المرور أيضاً، يرجى تفعيل مزود Email/Password من لوحة Firebase Console.</string>
+    <string name="auth_cancelled">تم إلغاء تسجيل الدخول. اضغط للمحاولة مرة أخرى.</string>
+    <string name="auth_sign_out">تسجيل الخروج</string>
+    <string name="auth_sign_out_subtitle">تبديل الحساب أو تسجيل الخروج من التطبيق</string>
+
+    <!-- Post-Login Quick Tutorial -->
+    <string name="tutorial_badge">دليل سريع</string>
+    <string name="tutorial_step_counter">الخطوة %1$d من %2$d</string>
+    <string name="tutorial_skip">تخطي</string>
+    <string name="tutorial_next">التالي</string>
+    <string name="tutorial_previous">السابق</string>
+    <string name="tutorial_finish">ابدأ الاستخدام</string>
+    <string name="tutorial_try_discover">تصفح استكشاف</string>
+    <string name="tutorial_step1_title">مكتبتك تبدأ فارغة تماماً</string>
+    <string name="tutorial_step1_body">عند دخولك لأول مرة تكون مكتبتك فارغة لتتحكم في كل أنمي تضيفه وتشاهده بنفسك، وتُحسب جميع الإحصائيات بناءً على نشاطك الحقيقي.</string>
+    <string name="tutorial_step2_title">كيفية إضافة أنمي جديد</string>
+    <string name="tutorial_step2_body">افتح استكشاف أو أيقونة البحث (+)، واكتب اسم الأنمي حتى لو بأحرف ناقصة أو بالعربية مثل \"سولو ليفلنج\"، ثم افتح صفحة الأنمي واضغط أيقونة الحفظ لإضافته إلى مكتبتك.</string>
+    <string name="tutorial_step3_title">كيفية تسجيل الحلقات المشاهدة</string>
+    <string name="tutorial_step3_body">بعد مشاهدة أي حلقة، اضغط على (+1 حلقة) مباشرة من الشاشة الرئيسية أو افتح متتبع الحلقات لتحديد الحلقات أو التراجع عن أي حلقة.</string>
+    <string name="tutorial_replay_title">إعادة عرض الدليل السريع</string>
+    <string name="tutorial_replay_subtitle">تعرف على كيفية إضافة أنمي وتسجيل الحلقات</string>
+
+    <!-- Home Dashboard -->
+    <string name="greeting_evening">مساء الخير، %1$s</string>
+    <string name="greeting_user">مساء الخير، رين</string>
+    <string name="your_journey">رحلتك</string>
+    <string name="full_stats">كل الإحصائيات</string>
+    <string name="episodes_label">الحلقات</string>
+    <string name="quick_add_anime">إضافة أنمي</string>
+    <string name="quick_update_ep">تحديث حلقة</string>
+    <string name="quick_browse">استكشاف</string>
+    <string name="continue_watching">متابعة المشاهدة</string>
+    <string name="track_all">تتبع الكل</string>
+    <string name="empty_watching_cta">لا تشاهد أي أنمي حالياً. ابحث أو تصفح استكشاف لإضافة أول أنمي لك!</string>
+    <string name="recently_added">المضاف حديثاً</string>
+    <string name="see_library">عرض المكتبة</string>
+    <string name="empty_recent_cta">لم تضف أي أنمي بعد. اضغط على إضافة أنمي لتبدأ بناء مكتبتك.</string>
+    <string name="recommended_for_you">مقترح لك</string>
+    <string name="pick_random">اختيار عشوائي</string>
+    <string name="plus_one_episode">+1 حلقة</string>
+    <string name="season_complete">اكتمل الموسم</string>
+    <string name="ep_progress_format">حلقة %1$d / %2$s</string>
+
+    <!-- Anime Library -->
+    <string name="library_title">المكتبة</string>
+    <string name="library_series_count">%1$d أنمي في مكتبتك</string>
+    <string name="library_search_hint">ابحث في مكتبتك (يدعم الأخطاء الإملائية والعربية)…</string>
+    <string name="all_genres">كل التصنيفات</string>
+    <string name="sort_recent">الأحدث تحديثاً</string>
+    <string name="sort_highest_rated">الأعلى تقييماً</string>
+    <string name="sort_title_az">الاسم أ-ي</string>
+    <string name="sort_progress">نسبة التقدم %</string>
+    <string name="empty_library_title">مكتبتك فارغة حالياً</string>
+    <string name="empty_library_subtitle">أضف أنمياتك المفضلة من صفحة الاستكشاف أو البحث لتتابع حلقاتها وتقييماتها هنا.</string>
+    <string name="explore_discover">تصفح الاستكشاف</string>
+    <string name="edit_anime_title">تعديل %1$s</string>
+    <string name="episodes_watched_label">الحلقات المشاهدة (الحد الأقصى %1$s)</string>
+    <string name="personal_notes_label">ملاحظاتك الشخصية</string>
+    <string name="remove_from_library">إزالة من المكتبة</string>
+
+    <!-- Discover & Search -->
+    <string name="discover_title">استكشاف</string>
+    <string name="discover_subtitle">مدعوم من AniList · بحث ذكي</string>
+    <string name="discover_search_placeholder">ابحث عن أنمي (مثل سولو ليفلنج أو Solo Leveling)…</string>
+    <string name="browse_by_genre">تصفح حسب التصنيف</string>
+    <string name="trending_now">الرائج الآن</string>
+    <string name="popular_anime">الأكثر شعبية</string>
+    <string name="top_rated_classics">الأعلى تقييماً</string>
+    <string name="seasonal_upcoming">الموسمي والقادم</string>
+    <string name="calendar_label">التقويم</string>
+    <string name="search_hint">اكتب اسم الأنمي أو جزءاً منه أو بالعربية…</string>
+    <string name="search_anilist_chip">بحث في AniList</string>
+    <string name="genre_prefix">التصنيف: %1$s</string>
+    <string name="format_prefix">النوع: %1$s</string>
+    <string name="sort_rating_chip">الترتيب: التقييم</string>
+    <string name="sort_popular_chip">الترتيب: الشعبية</string>
+    <string name="recent_label">الأخيرة:</string>
+    <string name="fuzzy_match_hint">نتائج ذكية لـ \"%1$s\" ← %2$s</string>
+    <string name="empty_search_title">لم يتم العثور على أنمي</string>
+    <string name="empty_search_subtitle">جرّب تعديل الفلاتر أو البحث باسم آخر.</string>
+    <string name="reset_filters">إعادة ضبط الفلاتر</string>
+    <string name="error_search_title">انقطع الاتصال</string>
+    <string name="error_search_subtitle">تعذر الوصول إلى الكتالوج. تحقق من الإنترنت وحاول مرة أخرى.</string>
+    <string name="cached_results_fallback">عرض %1$d نتيجة محفوظة (%2$s)</string>
+    <string name="load_more_page">تحميل المزيد (صفحة %1$d)</string>
+
+    <!-- Details & Episode Tracker -->
+    <string name="details_community">تقييم المجتمع</string>
+    <string name="details_your_rating">تقييمك</string>
+    <string name="details_tap_to_rate">اضغط للتقييم</string>
+    <string name="details_update_progress">تحديث التقدم (%1$d/%2$s)</string>
+    <string name="details_synopsis">القصة</string>
+    <string name="details_information">معلومات</string>
+    <string name="details_studio">الاستوديو</string>
+    <string name="details_source">المصدر</string>
+    <string name="details_duration">المدة</string>
+    <string name="details_seasons">المواسم</string>
+    <string name="details_min_per_ep">%1$d د / حلقة</string>
+    <string name="details_add_note">إضافة ملاحظة</string>
+    <string name="details_edit_note">تعديل الملاحظة</string>
+    <string name="details_no_notes">لا توجد ملاحظات شخصية بعد.</string>
+    <string name="details_personal_review">مراجعتك الشخصية</string>
+    <string name="details_edit_review">تعديل المراجعة</string>
+    <string name="details_no_review">لا توجد مراجعة بعد. اضغط تعديل المراجعة لتقييم القصة والتحريك والموسيقى.</string>
+    <string name="details_spoiler_warning">تحتوي المراجعة على حرق للأحداث</string>
+    <string name="details_reveal">إظهار</string>
+    <string name="details_similar_anime">أنميات مشابهة</string>
+    <string name="tracker_title">متتبع الحلقات</string>
+    <string name="tracker_mark_next">تحديد التالية</string>
+    <string name="tracker_all_watched">تمت مشاهدة الكل</string>
+    <string name="tracker_episodes">الحلقات</string>
+    <string name="tracker_update_manually">تحديث التقدم يدوياً</string>
+    <string name="tracker_empty_series">أضف أنمي إلى مكتبتك أولاً لتتبع حلقاته.</string>
+    <string name="autocomplete_title">وصلت للحلقة الأخيرة!</string>
+    <string name="autocomplete_body">شاهدت جميع حلقات %1$s. هل تريد نقله إلى مكتمل؟</string>
+    <string name="autocomplete_confirm">تحديد كمكتمل</string>
+    <string name="autocomplete_keep">متابعة المشاهدة</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">الإحصائيات</string>
+    <string name="stats_subtitle">محسوبة من مكتبتك المحلية</string>
+    <string name="stats_total_anime">إجمالي الأنمي</string>
+    <string name="stats_episodes_watched">الحلقات المشاهدة</string>
+    <string name="stats_average_rating">متوسط التقييم (%1$d مُقيّم)</string>
+    <string name="stats_status_distribution">توزيع الحالات</string>
+    <string name="stats_monthly_activity">النشاط الشهري</string>
+    <string name="stats_rating_distribution">توزيع التقييمات</string>
+    <string name="stats_favorite_genres">التصنيفات المفضلة</string>
+    <string name="stats_highlights">أبرز المحطات</string>
+    <string name="stats_highest_rated">الأعلى تقييماً</string>
+    <string name="stats_most_watched">الأكثر مشاهدة</string>
+
+    <!-- Watchlists, Reviews, Calendar, Random Picker -->
+    <string name="watchlists_title">قوائم المشاهدة</string>
+    <string name="watchlists_create">إنشاء قائمة</string>
+    <string name="watchlists_edit">تعديل القائمة</string>
+    <string name="watchlists_empty">لا توجد قوائم مشاهدة بعد. أنشئ قائمة لتنظيم أنمياتك.</string>
+    <string name="reviews_title">التقييم والمراجعة</string>
+    <string name="reviews_overall">التقييم العام</string>
+    <string name="reviews_breakdown">تفصيل التقييم</string>
+    <string name="reviews_story">القصة</string>
+    <string name="reviews_animation">التحريك</string>
+    <string name="reviews_characters">الشخصيات</string>
+    <string name="reviews_soundtrack">الموسيقى</string>
+    <string name="reviews_written">المراجعة المكتوبة</string>
+    <string name="reviews_contains_spoilers">يحتوي على حرق</string>
+    <string name="reviews_save">حفظ المراجعة</string>
+    <string name="reviews_delete">حذف المراجعة</string>
+    <string name="calendar_title">تقويم الإصدارات</string>
+    <string name="picker_title">الاختيار العشوائي</string>
+    <string name="picker_select_another">اختيار آخر</string>
+    <string name="picker_open_details">فتح التفاصيل</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="profile_edit">تعديل الملف الشخصي</string>
+    <string name="profile_display_name">الاسم</string>
+    <string name="profile_bio">النبذة</string>
+    <string name="profile_favorite_anime">الأنميات المفضلة</string>
+    <string name="profile_collections">المجموعات الشخصية</string>
+    <string name="profile_manage">إدارة</string>
+    <string name="profile_view_all">عرض الكل</string>
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_theme_mode">الوضع</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_accent_color">اللون الرئيسي</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_label">لغة التطبيق</string>
+    <string name="settings_language_system">لغة الجهاز (تلقائي)</string>
+    <string name="settings_notifications">الإشعارات</string>
+    <string name="settings_episode_reminders">تذكيرات الحلقات</string>
+    <string name="settings_episode_reminders_sub">تنبيه عند صدور حلقات جديدة للأنميات المتابعة</string>
+    <string name="settings_release_notifications">إشعارات الإصدارات</string>
+    <string name="settings_release_notifications_sub">تنبيهات بداية ونهاية المواسم</string>
+    <string name="settings_default_sorting">الترتيب الافتراضي</string>
+    <string name="settings_default_view">العرض الافتراضي</string>
+    <string name="settings_poster_grid">شبكة</string>
+    <string name="settings_list_view">قائمة</string>
+    <string name="settings_auto_status">اقتراح إكمال تلقائي</string>
+    <string name="settings_auto_status_sub">اقتراح نقل الأنمي لمكتمل عند آخر حلقة</string>
+    <string name="settings_data">البيانات</string>
+    <string name="settings_export">تصدير المكتبة</string>
+    <string name="settings_export_sub">مشاركة قائمتك بصيغة JSON</string>
+    <string name="settings_import">استيراد المكتبة</string>
+    <string name="settings_import_sub">استعادة الأنميات والقوائم من ملف JSON</string>
+    <string name="settings_backup">مزامنة الإعدادات</string>
+    <string name="settings_account">الحساب</string>
+    <string name="settings_about">حول التطبيق</string>
+    <string name="settings_app_version">إصدار التطبيق</string>
+    <string name="settings_privacy">سياسة الخصوصية</string>
+    <string name="settings_terms">شروط الخدمة</string>
+    <string name="settings_about_app">حول AniTrack</string>
+</resources>

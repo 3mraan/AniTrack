@@ -1,0 +1,167 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function validTimestamp(ts) {
+      return ts is timestamp && ts <= request.time;
+    }
+
+    function isValidUserProfile(d, userId) {
+      return d.keys().hasOnly([
+          'uid', 'displayName', 'handle', 'bio',
+          'favoriteGenres', 'tutorialCompleted', 'createdAt', 'updatedAt'
+        ])
+        && d.keys().hasAll([
+          'uid', 'displayName', 'handle', 'bio',
+          'favoriteGenres', 'tutorialCompleted', 'createdAt', 'updatedAt'
+        ])
+        && d.uid is string && d.uid == userId && d.uid.size() >= 1 && d.uid.size() <= 128
+        && d.displayName is string && d.displayName.size() >= 1 && d.displayName.size() <= 100
+        && d.handle is string && d.handle.size() <= 60
+        && d.bio is string && d.bio.size() <= 500
+        && d.favoriteGenres is list && d.favoriteGenres.size() <= 20
+        && d.tutorialCompleted is bool
+        && validTimestamp(d.createdAt)
+        && validTimestamp(d.updatedAt);
+    }
+
+    function isValidLibraryEntry(d, animeId) {
+      return d.keys().hasOnly([
+          'animeId', 'title', 'posterUrl', 'status', 'watchedEpisodes',
+          'currentSeason', 'inLibrary', 'isFavorite', 'reminderEnabled',
+          'personalNotes', 'createdAt', 'updatedAt'
+        ])
+        && d.keys().hasAll([
+          'animeId', 'title', 'posterUrl', 'status', 'watchedEpisodes',
+          'currentSeason', 'inLibrary', 'isFavorite', 'reminderEnabled',
+          'personalNotes', 'createdAt', 'updatedAt'
+        ])
+        && d.animeId is string && d.animeId == animeId && d.animeId.size() >= 1 && d.animeId.size() <= 80
+        && d.title is string && d.title.size() >= 1 && d.title.size() <= 200
+        && d.posterUrl is string && d.posterUrl.size() <= 500
+        && d.status in ['WATCHING', 'COMPLETED', 'PLANNED', 'ON_HOLD', 'DROPPED']
+        && d.watchedEpisodes is int && d.watchedEpisodes >= 0 && d.watchedEpisodes <= 5000
+        && d.currentSeason is int && d.currentSeason >= 1 && d.currentSeason <= 50
+        && d.inLibrary is bool
+        && d.isFavorite is bool
+        && d.reminderEnabled is bool
+        && d.personalNotes is string && d.personalNotes.size() <= 2000
+        && validTimestamp(d.createdAt)
+        && validTimestamp(d.updatedAt);
+    }
+
+    function isValidReview(d, animeId) {
+      return d.keys().hasOnly([
+          'animeId', 'overallRating', 'storyScore', 'animationScore',
+          'charactersScore', 'soundtrackScore', 'reviewText',
+          'containsSpoilers', 'createdAt', 'updatedAt'
+        ])
+        && d.keys().hasAll([
+          'animeId', 'overallRating', 'storyScore', 'animationScore',
+          'charactersScore', 'soundtrackScore', 'reviewText',
+          'containsSpoilers', 'createdAt', 'updatedAt'
+        ])
+        && d.animeId is string && d.animeId == animeId && d.animeId.size() >= 1 && d.animeId.size() <= 80
+        && (d.overallRating is int || d.overallRating is float)
+        && d.overallRating >= 1 && d.overallRating <= 10
+        && d.storyScore is int && d.storyScore >= 1 && d.storyScore <= 10
+        && d.animationScore is int && d.animationScore >= 1 && d.animationScore <= 10
+        && d.charactersScore is int && d.charactersScore >= 1 && d.charactersScore <= 10
+        && d.soundtrackScore is int && d.soundtrackScore >= 1 && d.soundtrackScore <= 10
+        && d.reviewText is string && d.reviewText.size() <= 3000
+        && d.containsSpoilers is bool
+        && validTimestamp(d.createdAt)
+        && validTimestamp(d.updatedAt);
+    }
+
+    function isValidWatchlist(d, watchlistId) {
+      return d.keys().hasOnly([
+          'id', 'name', 'description', 'coverKey', 'animeIds',
+          'createdAt', 'updatedAt'
+        ])
+        && d.keys().hasAll([
+          'id', 'name', 'description', 'coverKey', 'animeIds',
+          'createdAt', 'updatedAt'
+        ])
+        && d.id is string && d.id == watchlistId && d.id.size() >= 1 && d.id.size() <= 80
+        && d.name is string && d.name.size() >= 1 && d.name.size() <= 120
+        && d.description is string && d.description.size() <= 1000
+        && d.coverKey is string && d.coverKey.size() <= 500
+        && d.animeIds is list && d.animeIds.size() <= 200
+        && validTimestamp(d.createdAt)
+        && validTimestamp(d.updatedAt);
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isOwner(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().uid == resource.data.uid
+        && incoming().createdAt == resource.data.createdAt
+        && incoming().updatedAt == request.time;
+      allow delete: if isOwner(userId);
+
+      match /library/{animeId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && isValidLibraryEntry(incoming(), animeId)
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time;
+        allow update: if isOwner(userId)
+          && isValidLibraryEntry(incoming(), animeId)
+          && incoming().animeId == resource.data.animeId
+          && incoming().createdAt == resource.data.createdAt
+          && incoming().updatedAt == request.time;
+        allow delete: if isOwner(userId);
+      }
+
+      match /reviews/{animeId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && isValidReview(incoming(), animeId)
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time;
+        allow update: if isOwner(userId)
+          && isValidReview(incoming(), animeId)
+          && incoming().animeId == resource.data.animeId
+          && incoming().createdAt == resource.data.createdAt
+          && incoming().updatedAt == request.time;
+        allow delete: if isOwner(userId);
+      }
+
+      match /watchlists/{watchlistId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && isValidWatchlist(incoming(), watchlistId)
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time;
+        allow update: if isOwner(userId)
+          && isValidWatchlist(incoming(), watchlistId)
+          && incoming().id == resource.data.id
+          && incoming().createdAt == resource.data.createdAt
+          && incoming().updatedAt == request.time;
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

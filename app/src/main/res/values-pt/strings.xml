@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">AniTrack</string>
+    <string name="about_tagline">Seu Anime. Sua Jornada.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Início</string>
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_discover">Descobrir</string>
+    <string name="nav_stats">Estatísticas</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Watch Statuses -->
+    <string name="status_watching">Assistindo</string>
+    <string name="status_completed">Concluído</string>
+    <string name="status_planned">Planejado</string>
+    <string name="status_on_hold">Em Pausa</string>
+    <string name="status_dropped">Abandonado</string>
+
+    <!-- Common Actions & Dialogs -->
+    <string name="action_save">Salvar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_close">Fechar</string>
+    <string name="action_retry">Tentar Novamente</string>
+    <string name="action_reset">Redefinir</string>
+    <string name="action_create">Criar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_add">Adicionar</string>
+    <string name="action_apply">Aplicar</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_all">Todos</string>
+    <string name="loading_series">Carregando séries…</string>
+
+    <!-- Authentication (Login & Create Account) -->
+    <string name="auth_sign_in_tab">Entrar</string>
+    <string name="auth_create_account_tab">Criar Conta</string>
+    <string name="auth_sign_in_headline">Bem-vindo de Volta</string>
+    <string name="auth_sign_in_subtitle">Entre para sincronizar sua biblioteca de animes, progresso de episódios e listas pessoais entre dispositivos.</string>
+    <string name="auth_create_headline">Comece Sua Jornada</string>
+    <string name="auth_create_subtitle">Crie sua conta AniTrack com uma biblioteca vazia e acompanhe cada episódio facilmente.</string>
+    <string name="auth_continue_google">Continuar com o Google</string>
+    <string name="auth_create_with_google">Criar Conta com o Google</string>
+    <string name="auth_signing_in">Autenticando…</string>
+    <string name="auth_switch_to_create">Novo no AniTrack? Criar Conta</string>
+    <string name="auth_switch_to_login">Já tem uma conta? Entrar</string>
+    <string name="auth_feature_empty_start">Começa com uma biblioteca limpa e vazia para personalizar</string>
+    <string name="auth_feature_cloud_sync">Backup criptografado na nuvem via Firebase Firestore</string>
+    <string name="auth_feature_multilingual">Busca inteligente multilíngue e tolerante a erros de digitação</string>
+    <string name="auth_email_setup_title">Login com E-mail e Senha</string>
+    <string name="auth_email_setup_body">O Login com o Google está pronto imediatamente. Para também ativar E-mail e Senha nativos, ative o provedor E-mail/Senha no Console do Firebase (Authentication → Sign-in method).</string>
+    <string name="auth_cancelled">Login cancelado. Toque para tentar novamente.</string>
+    <string name="auth_sign_out">Sair</string>
+    <string name="auth_sign_out_subtitle">Trocar de conta ou bloquear sua biblioteca</string>
+
+    <!-- Post-Login Quick Tutorial -->
+    <string name="tutorial_badge">GUIA RÁPIDO</string>
+    <string name="tutorial_step_counter">Passo %1$d de %2$d</string>
+    <string name="tutorial_skip">Pular</string>
+    <string name="tutorial_next">Próximo</string>
+    <string name="tutorial_previous">Voltar</string>
+    <string name="tutorial_finish">Começar</string>
+    <string name="tutorial_try_discover">Explorar Descobrir</string>
+    <string name="tutorial_step1_title">Sua Biblioteca Começa do Zero</string>
+    <string name="tutorial_step1_body">Sua biblioteca pessoal começa totalmente vazia para que você acompanhe apenas os animes que realmente escolher. Todas as estatísticas atualizam automaticamente.</string>
+    <string name="tutorial_step2_title">Como Adicionar um Novo Anime</string>
+    <string name="tutorial_step2_body">Toque em Descobrir ou no ícone + Buscar, digite o nome de qualquer anime (erros de digitação ou nomes como \"سولو ليفلنج\" também funcionam!), abra a página e toque no ícone de Marcador.</string>
+    <string name="tutorial_step3_title">Como Registrar Episódios Assistidos</string>
+    <string name="tutorial_step3_body">Ao terminar um episódio, toque em +1 Episódio na tela Inicial ou abra o Rastreador de Episódios para marcar ou desfazer episódios a qualquer momento.</string>
+    <string name="tutorial_replay_title">Rever Tutorial Rápido</string>
+    <string name="tutorial_replay_subtitle">Veja novamente como adicionar animes e registrar episódios</string>
+
+    <!-- Home Dashboard -->
+    <string name="greeting_evening">Boa noite, %1$s</string>
+    <string name="greeting_user">Boa noite, Ren</string>
+    <string name="your_journey">Sua Jornada</string>
+    <string name="full_stats">Ver Tudo</string>
+    <string name="episodes_label">Episódios</string>
+    <string name="quick_add_anime">Adicionar</string>
+    <string name="quick_update_ep">Atualizar Ep</string>
+    <string name="quick_browse">Explorar</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="track_all">Rastrear Tudo</string>
+    <string name="empty_watching_cta">Sua fila está vazia. Pesquise ou explore em Descobrir para adicionar seu primeiro anime!</string>
+    <string name="recently_added">Adicionados Recentemente</string>
+    <string name="see_library">Ver Biblioteca</string>
+    <string name="empty_recent_cta">Nenhum anime adicionado ainda. Toque em Adicionar para montar sua biblioteca.</string>
+    <string name="recommended_for_you">Recomendado para Você</string>
+    <string name="pick_random">Aleatório</string>
+    <string name="plus_one_episode">+1 Episódio</string>
+    <string name="season_complete">Temporada Concluída</string>
+    <string name="ep_progress_format">Ep %1$d / %2$s</string>
+
+    <!-- Anime Library -->
+    <string name="library_title">Biblioteca</string>
+    <string name="library_series_count">%1$d séries rastreadas</string>
+    <string name="library_search_hint">Buscar na biblioteca (aceita erros e árabe)…</string>
+    <string name="all_genres">Todos os Gêneros</string>
+    <string name="sort_recent">Atualizados Recentemente</string>
+    <string name="sort_highest_rated">Melhor Avaliados</string>
+    <string name="sort_title_az">Título A-Z</string>
+    <string name="sort_progress">Progresso %</string>
+    <string name="empty_library_title">Sua biblioteca está vazia</string>
+    <string name="empty_library_subtitle">Adicione animes em Descobrir ou na Busca para acompanhar episódios, notas e listas.</string>
+    <string name="explore_discover">Explorar Descobrir</string>
+    <string name="edit_anime_title">Editar %1$s</string>
+    <string name="episodes_watched_label">Episódios Assistidos (máx %1$s)</string>
+    <string name="personal_notes_label">Notas Pessoais</string>
+    <string name="remove_from_library">Remover da Biblioteca</string>
+
+    <!-- Discover & Search -->
+    <string name="discover_title">Descobrir</string>
+    <string name="discover_subtitle">Com AniList · Busca Inteligente</string>
+    <string name="discover_search_placeholder">Buscar anime (ex. Solo Leveling ou سولو ليفلنج)…</string>
+    <string name="browse_by_genre">Explorar por Gênero</string>
+    <string name="trending_now">Em Alta Agora</string>
+    <string name="popular_anime">Animes Populares</string>
+    <string name="top_rated_classics">Clássicos Bem Avaliados</string>
+    <string name="seasonal_upcoming">Da Temporada e Em Breve</string>
+    <string name="calendar_label">Calendário</string>
+    <string name="search_hint">Digite qualquer título, com erro de digitação ou em árabe…</string>
+    <string name="search_anilist_chip">Buscar no AniList</string>
+    <string name="genre_prefix">Gênero: %1$s</string>
+    <string name="format_prefix">Formato: %1$s</string>
+    <string name="sort_rating_chip">Ordem: Nota</string>
+    <string name="sort_popular_chip">Ordem: Popular</string>
+    <string name="recent_label">Recentes:</string>
+    <string name="fuzzy_match_hint">Correspondência inteligente para \"%1$s\" → %2$s</string>
+    <string name="empty_search_title">Nenhum anime encontrado</string>
+    <string name="empty_search_subtitle">Verifique seus filtros ou tente buscar outro título.</string>
+    <string name="reset_filters">Redefinir Filtros</string>
+    <string name="error_search_title">Conexão interrompida</string>
+    <string name="error_search_subtitle">Não foi possível acessar o catálogo. Verifique sua conexão e tente novamente.</string>
+    <string name="cached_results_fallback">Mostrando %1$d resultados em cache (%2$s)</string>
+    <string name="load_more_page">Carregar Mais (Página %1$d)</string>
+
+    <!-- Details & Episode Tracker -->
+    <string name="details_community">COMUNIDADE</string>
+    <string name="details_your_rating">SUA NOTA</string>
+    <string name="details_tap_to_rate">Toque para Avaliar</string>
+    <string name="details_update_progress">Atualizar Progresso (%1$d/%2$s)</string>
+    <string name="details_synopsis">Sinopse</string>
+    <string name="details_information">Informações</string>
+    <string name="details_studio">Estúdio</string>
+    <string name="details_source">Origem</string>
+    <string name="details_duration">Duração</string>
+    <string name="details_seasons">Temporadas</string>
+    <string name="details_min_per_ep">%1$d min / ep</string>
+    <string name="details_add_note">Adicionar Nota</string>
+    <string name="details_edit_note">Editar Nota</string>
+    <string name="details_no_notes">Nenhuma nota pessoal ainda.</string>
+    <string name="details_personal_review">Resenha Pessoal</string>
+    <string name="details_edit_review">Editar Resenha</string>
+    <string name="details_no_review">Nenhuma resenha ainda. Toque em Editar Resenha para avaliar história, animação, personagens e trilha sonora.</string>
+    <string name="details_spoiler_warning">Resenha marcada com spoilers</string>
+    <string name="details_reveal">Revelar</string>
+    <string name="details_similar_anime">Animes Semelhantes</string>
+    <string name="tracker_title">Rastreador de Episódios</string>
+    <string name="tracker_mark_next">Marcar Próximo</string>
+    <string name="tracker_all_watched">Todos Assistidos</string>
+    <string name="tracker_episodes">Episódios</string>
+    <string name="tracker_update_manually">Atualizar Progresso Manualmente</string>
+    <string name="tracker_empty_series">Adicione um anime à sua biblioteca primeiro para rastrear episódios.</string>
+    <string name="autocomplete_title">Último Episódio Alcançado!</string>
+    <string name="autocomplete_body">Você assistiu todos os episódios de %1$s. Mover para Concluído?</string>
+    <string name="autocomplete_confirm">Marcar Concluído</string>
+    <string name="autocomplete_keep">Continuar Assistindo</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">Estatísticas</string>
+    <string name="stats_subtitle">Calculado da sua biblioteca</string>
+    <string name="stats_total_anime">Total de Animes</string>
+    <string name="stats_episodes_watched">Episódios Assistidos</string>
+    <string name="stats_average_rating">Nota Média (%1$d avaliados)</string>
+    <string name="stats_status_distribution">Distribuição por Status</string>
+    <string name="stats_monthly_activity">Atividade Mensal</string>
+    <string name="stats_rating_distribution">Distribuição de Notas</string>
+    <string name="stats_favorite_genres">Gêneros Favoritos</string>
+    <string name="stats_highlights">Destaques</string>
+    <string name="stats_highest_rated">Melhor Avaliado</string>
+    <string name="stats_most_watched">Mais Assistido</string>
+
+    <!-- Watchlists, Reviews, Calendar, Random Picker -->
+    <string name="watchlists_title">Listas</string>
+    <string name="watchlists_create">Criar Lista</string>
+    <string name="watchlists_edit">Editar Lista</string>
+    <string name="watchlists_empty">Nenhuma lista personalizada ainda. Toque em Criar para organizar suas séries favoritas.</string>
+    <string name="reviews_title">Avaliar e Resenhar</string>
+    <string name="reviews_overall">Nota Geral</string>
+    <string name="reviews_breakdown">Por Categoria</string>
+    <string name="reviews_story">História</string>
+    <string name="reviews_animation">Animação</string>
+    <string name="reviews_characters">Personagens</string>
+    <string name="reviews_soundtrack">Trilha Sonora</string>
+    <string name="reviews_written">Resenha Escrita</string>
+    <string name="reviews_contains_spoilers">Contém Spoilers</string>
+    <string name="reviews_save">Salvar Resenha</string>
+    <string name="reviews_delete">Excluir Resenha</string>
+    <string name="calendar_title">Calendário de Lançamentos</string>
+    <string name="picker_title">Seletor Aleatório</string>
+    <string name="picker_select_another">Escolher Outro</string>
+    <string name="picker_open_details">Abrir Detalhes</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_edit">Editar Perfil</string>
+    <string name="profile_display_name">Nome de Exibição</string>
+    <string name="profile_bio">Bio</string>
+    <string name="profile_favorite_anime">Animes Favoritos</string>
+    <string name="profile_collections">Coleções Pessoais</string>
+    <string name="profile_manage">Gerenciar</string>
+    <string name="profile_view_all">Ver Tudo</string>
+    <string name="settings_title">Configurações</string>
+    <string name="settings_appearance">Aparência</string>
+    <string name="settings_theme_mode">Tema</string>
+    <string name="settings_theme_dark">Escuro</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_accent_color">Cor de Destaque</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_label">Idioma do App</string>
+    <string name="settings_language_system">Idioma do Sistema (Automático)</string>
+    <string name="settings_notifications">Notificações</string>
+    <string name="settings_episode_reminders">Lembretes de Episódios</string>
+    <string name="settings_episode_reminders_sub">Notificar quando séries assistidas lançarem novos episódios</string>
+    <string name="settings_release_notifications">Notificações de Lançamento</string>
+    <string name="settings_release_notifications_sub">Alertas de estreias e finais de temporada</string>
+    <string name="settings_default_sorting">Ordenação Padrão</string>
+    <string name="settings_default_view">Visualização Padrão</string>
+    <string name="settings_poster_grid">Grade de Pôsteres</string>
+    <string name="settings_list_view">Lista</string>
+    <string name="settings_auto_status">Sugestões Automáticas de Status</string>
+    <string name="settings_auto_status_sub">Sugerir marcar como Concluído no último episódio</string>
+    <string name="settings_data">Dados</string>
+    <string name="settings_export">Exportar Biblioteca</string>
+    <string name="settings_export_sub">Compartilhe sua lista e coleções em JSON</string>
+    <string name="settings_import">Importar Biblioteca</string>
+    <string name="settings_import_sub">Restaurar séries e listas de um backup JSON</string>
+    <string name="settings_backup">Configurações de Backup</string>
+    <string name="settings_account">Conta</string>
+    <string name="settings_about">Sobre</string>
+    <string name="settings_app_version">Versão do App</string>
+    <string name="settings_privacy">Política de Privacidade</string>
+    <string name="settings_terms">Termos de Serviço</string>
+    <string name="settings_about_app">Sobre o AniTrack</string>
+</resources>

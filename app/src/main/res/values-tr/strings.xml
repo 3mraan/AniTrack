@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">AniTrack</string>
+    <string name="about_tagline">Senin Animen. Senin Yolculuğun.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_library">Kitaplık</string>
+    <string name="nav_discover">Keşfet</string>
+    <string name="nav_stats">İstatistik</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Watch Statuses -->
+    <string name="status_watching">İzleniyor</string>
+    <string name="status_completed">Tamamlandı</string>
+    <string name="status_planned">Planlandı</string>
+    <string name="status_on_hold">Beklemede</string>
+    <string name="status_dropped">Bırakıldı</string>
+
+    <!-- Common Actions & Dialogs -->
+    <string name="action_save">Kaydet</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="action_reset">Sıfırla</string>
+    <string name="action_create">Oluştur</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_add">Ekle</string>
+    <string name="action_apply">Uygula</string>
+    <string name="action_back">Geri git</string>
+    <string name="action_all">Tümü</string>
+    <string name="loading_series">Seriler yükleniyor…</string>
+
+    <!-- Authentication (Login & Create Account) -->
+    <string name="auth_sign_in_tab">Giriş Yap</string>
+    <string name="auth_create_account_tab">Hesap Oluştur</string>
+    <string name="auth_sign_in_headline">Tekrar Hoş Geldin</string>
+    <string name="auth_sign_in_subtitle">Anime kitaplığını, bölüm ilerlemeni ve izleme listelerini cihazlar arasında senkronize etmek için giriş yap.</string>
+    <string name="auth_create_headline">Yolculuğuna Başla</string>
+    <string name="auth_create_subtitle">Boş bir kitaplıkla AniTrack hesabını oluştur ve her bölümü kolayca takip et.</string>
+    <string name="auth_continue_google">Google ile Devam Et</string>
+    <string name="auth_create_with_google">Google ile Hesap Oluştur</string>
+    <string name="auth_signing_in">Doğrulanıyor…</string>
+    <string name="auth_switch_to_create">AniTrack\'te yeni misin? Hesap Oluştur</string>
+    <string name="auth_switch_to_login">Zaten hesabın var mı? Giriş Yap</string>
+    <string name="auth_feature_empty_start">Kendi seçtiğin animelerle temiz, boş bir kitaplıkla başlar</string>
+    <string name="auth_feature_cloud_sync">Firebase Firestore ile şifreli bulut yedekleme</string>
+    <string name="auth_feature_multilingual">Akıllı çok dilli ve yazım hatası toleranslı anime arama</string>
+    <string name="auth_email_setup_title">E-posta ve Şifre ile Giriş</string>
+    <string name="auth_email_setup_body">Google ile Giriş hemen hazırdır. Yerel E-posta ve Şifre kimlik doğrulamasını da etkinleştirmek için Firebase Konsolu\'nda E-posta/Şifre sağlayıcısını açın (Authentication → Sign-in method).</string>
+    <string name="auth_cancelled">Giriş iptal edildi. Tekrar denemek için dokun.</string>
+    <string name="auth_sign_out">Çıkış Yap</string>
+    <string name="auth_sign_out_subtitle">Hesap değiştir veya kitaplığını kilitle</string>
+
+    <!-- Post-Login Quick Tutorial -->
+    <string name="tutorial_badge">HIZLI REHBER</string>
+    <string name="tutorial_step_counter">Adım %1$d / %2$d</string>
+    <string name="tutorial_skip">Atla</string>
+    <string name="tutorial_next">İleri</string>
+    <string name="tutorial_previous">Geri</string>
+    <string name="tutorial_finish">Başla</string>
+    <string name="tutorial_try_discover">Keşfet\'e Göz At</string>
+    <string name="tutorial_step1_title">Kitaplığın Sıfırdan Başlar</string>
+    <string name="tutorial_step1_body">Kişisel kitaplığın tamamen boş başlar, böylece yalnızca gerçekten seçtiğin animeleri takip edersin. İlerledikçe tüm istatistikler otomatik güncellenir.</string>
+    <string name="tutorial_step2_title">Yeni Anime Nasıl Eklenir</string>
+    <string name="tutorial_step2_body">Keşfet\'e veya + Arama simgesine dokun, bir anime adı yaz (yazım hataları veya \"سولو ليفلنج\" gibi adlar da çalışır!), sayfasını aç ve Kitaplığına eklemek için Yer İşareti simgesine dokun.</string>
+    <string name="tutorial_step3_title">İzlenen Bölümler Nasıl Kaydedilir</string>
+    <string name="tutorial_step3_body">Bir bölümü bitirdiğinde Ana Sayfa\'da +1 Bölüm\'e dokun veya bölümleri tek tek işaretlemek ya da geri almak için Bölüm Takipçisini aç.</string>
+    <string name="tutorial_replay_title">Hızlı Eğitimi Tekrar Oynat</string>
+    <string name="tutorial_replay_subtitle">Anime ekleme ve bölüm takip etmeyi gözden geçir</string>
+
+    <!-- Home Dashboard -->
+    <string name="greeting_evening">İyi akşamlar, %1$s</string>
+    <string name="greeting_user">İyi akşamlar, Ren</string>
+    <string name="your_journey">Yolculuğun</string>
+    <string name="full_stats">Tüm İstatistikler</string>
+    <string name="episodes_label">Bölüm</string>
+    <string name="quick_add_anime">Anime Ekle</string>
+    <string name="quick_update_ep">Bölüm Güncelle</string>
+    <string name="quick_browse">Göz At</string>
+    <string name="continue_watching">İzlemeye Devam Et</string>
+    <string name="track_all">Tümünü Takip Et</string>
+    <string name="empty_watching_cta">İzleme listen boş. İlk animeni eklemek için ara veya Keşfet\'e göz at!</string>
+    <string name="recently_added">Son Eklenenler</string>
+    <string name="see_library">Kitaplığı Gör</string>
+    <string name="empty_recent_cta">Henüz anime eklenmedi. Kitaplığını oluşturmaya başlamak için Anime Ekle\'ye dokun.</string>
+    <string name="recommended_for_you">Senin İçin Önerilenler</string>
+    <string name="pick_random">Rastgele Seç</string>
+    <string name="plus_one_episode">+1 Bölüm</string>
+    <string name="season_complete">Sezon Tamamlandı</string>
+    <string name="ep_progress_format">Bölüm %1$d / %2$s</string>
+
+    <!-- Anime Library -->
+    <string name="library_title">Kitaplık</string>
+    <string name="library_series_count">%1$d seri takip ediliyor</string>
+    <string name="library_search_hint">Kitaplığında ara (yazım hatası ve Arapça destekli)…</string>
+    <string name="all_genres">Tüm Türler</string>
+    <string name="sort_recent">Son Güncellenen</string>
+    <string name="sort_highest_rated">En Yüksek Puanlı</string>
+    <string name="sort_title_az">Başlık A-Z</string>
+    <string name="sort_progress">İlerleme %</string>
+    <string name="empty_library_title">Kitaplığın boş</string>
+    <string name="empty_library_subtitle">Bölümlerini, puanlarını ve izleme listelerini takip etmek için Keşfet veya Arama\'dan anime ekle.</string>
+    <string name="explore_discover">Keşfet\'e Git</string>
+    <string name="edit_anime_title">%1$s Düzenle</string>
+    <string name="episodes_watched_label">İzlenen Bölümler (maks %1$s)</string>
+    <string name="personal_notes_label">Kişisel Notlar</string>
+    <string name="remove_from_library">Kitaplıktan Kaldır</string>
+
+    <!-- Discover & Search -->
+    <string name="discover_title">Keşfet</string>
+    <string name="discover_subtitle">AniList Destekli · Akıllı Arama</string>
+    <string name="discover_search_placeholder">Anime ara (ör. Solo Leveling veya سولو ليفلنج)…</string>
+    <string name="browse_by_genre">Türe Göre Göz At</string>
+    <string name="trending_now">Şu An Trend</string>
+    <string name="popular_anime">Popüler Animeler</string>
+    <string name="top_rated_classics">En Yüksek Puanlı Klasikler</string>
+    <string name="seasonal_upcoming">Sezonluk ve Yaklaşan</string>
+    <string name="calendar_label">Takvim</string>
+    <string name="search_hint">Herhangi bir anime adı, yazım hatası veya Arapça ad yaz…</string>
+    <string name="search_anilist_chip">AniList\'te Ara</string>
+    <string name="genre_prefix">Tür: %1$s</string>
+    <string name="format_prefix">Format: %1$s</string>
+    <string name="sort_rating_chip">Sırala: Puan</string>
+    <string name="sort_popular_chip">Sırala: Popüler</string>
+    <string name="recent_label">Son:</string>
+    <string name="fuzzy_match_hint">\"%1$s\" için akıllı eşleşme uygulandı → %2$s</string>
+    <string name="empty_search_title">Anime bulunamadı</string>
+    <string name="empty_search_subtitle">Filtrelerini kontrol etmeyi veya başka bir başlık aramayı dene.</string>
+    <string name="reset_filters">Filtreleri Sıfırla</string>
+    <string name="error_search_title">Bağlantı kesildi</string>
+    <string name="error_search_subtitle">Anime kataloğuna ulaşılamadı. Ağını kontrol edip tekrar dene.</string>
+    <string name="cached_results_fallback">%1$d önbelleğe alınmış sonuç gösteriliyor (%2$s)</string>
+    <string name="load_more_page">Daha Fazla Yükle (Sayfa %1$d)</string>
+
+    <!-- Details & Episode Tracker -->
+    <string name="details_community">TOPLULUK</string>
+    <string name="details_your_rating">SENİN PUANIN</string>
+    <string name="details_tap_to_rate">Puanlamak İçin Dokun</string>
+    <string name="details_update_progress">İlerlemeyi Güncelle (%1$d/%2$s)</string>
+    <string name="details_synopsis">Özet</string>
+    <string name="details_information">Bilgi</string>
+    <string name="details_studio">Stüdyo</string>
+    <string name="details_source">Kaynak</string>
+    <string name="details_duration">Süre</string>
+    <string name="details_seasons">Sezonlar</string>
+    <string name="details_min_per_ep">%1$d dk / blm</string>
+    <string name="details_add_note">Not Ekle</string>
+    <string name="details_edit_note">Notu Düzenle</string>
+    <string name="details_no_notes">Henüz kişisel not yok.</string>
+    <string name="details_personal_review">Kişisel İnceleme</string>
+    <string name="details_edit_review">İncelemeyi Düzenle</string>
+    <string name="details_no_review">Henüz yazılı inceleme yok. Hikaye, animasyon, karakterler ve müzik puanları vermek için İncelemeyi Düzenle\'ye dokun.</string>
+    <string name="details_spoiler_warning">İnceleme spoiler içeriyor olarak işaretlendi</string>
+    <string name="details_reveal">Göster</string>
+    <string name="details_similar_anime">Benzer Animeler</string>
+    <string name="tracker_title">Bölüm Takipçisi</string>
+    <string name="tracker_mark_next">Sonrakini İşaretle</string>
+    <string name="tracker_all_watched">Tümü İzlendi</string>
+    <string name="tracker_episodes">Bölümler</string>
+    <string name="tracker_update_manually">İlerlemeyi Manuel Güncelle</string>
+    <string name="tracker_empty_series">Bölümlerini takip etmek için önce kitaplığına bir anime ekle.</string>
+    <string name="autocomplete_title">Son Bölüme Ulaşıldı!</string>
+    <string name="autocomplete_body">%1$s animesinin tüm bölümlerini izledin. Tamamlandı olarak taşınsın mı?</string>
+    <string name="autocomplete_confirm">Tamamlandı İşaretle</string>
+    <string name="autocomplete_keep">İzlemeye Devam Et</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">İstatistikler</string>
+    <string name="stats_subtitle">Kitaplığından hesaplandı</string>
+    <string name="stats_total_anime">Toplam Anime</string>
+    <string name="stats_episodes_watched">İzlenen Bölümler</string>
+    <string name="stats_average_rating">Ortalama Puan (%1$d puanlandı)</string>
+    <string name="stats_status_distribution">Durum Dağılımı</string>
+    <string name="stats_monthly_activity">Aylık Aktivite</string>
+    <string name="stats_rating_distribution">Puan Dağılımı</string>
+    <string name="stats_favorite_genres">Favori Türler</string>
+    <string name="stats_highlights">Öne Çıkanlar</string>
+    <string name="stats_highest_rated">En Yüksek Puanlı</string>
+    <string name="stats_most_watched">En Çok İzlenen</string>
+
+    <!-- Watchlists, Reviews, Calendar, Random Picker -->
+    <string name="watchlists_title">İzleme Listeleri</string>
+    <string name="watchlists_create">Liste Oluştur</string>
+    <string name="watchlists_edit">Listeyi Düzenle</string>
+    <string name="watchlists_empty">Henüz özel izleme listesi yok. Favori serilerini düzenlemek için Oluştur\'a dokun.</string>
+    <string name="reviews_title">Puanla ve İncele</string>
+    <string name="reviews_overall">Genel Puan</string>
+    <string name="reviews_breakdown">Kategori Dağılımı</string>
+    <string name="reviews_story">Hikaye</string>
+    <string name="reviews_animation">Animasyon</string>
+    <string name="reviews_characters">Karakterler</string>
+    <string name="reviews_soundtrack">Müzik</string>
+    <string name="reviews_written">Yazılı İnceleme</string>
+    <string name="reviews_contains_spoilers">Spoiler İçerir</string>
+    <string name="reviews_save">İncelemeyi Kaydet</string>
+    <string name="reviews_delete">İncelemeyi Sil</string>
+    <string name="calendar_title">Yayın Takvimi</string>
+    <string name="picker_title">Rastgele Seçici</string>
+    <string name="picker_select_another">Başka Seç</string>
+    <string name="picker_open_details">Detayları Aç</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_edit">Profili Düzenle</string>
+    <string name="profile_display_name">Görünen Ad</string>
+    <string name="profile_bio">Hakkında</string>
+    <string name="profile_favorite_anime">Favori Animeler</string>
+    <string name="profile_collections">Kişisel Koleksiyonlar</string>
+    <string name="profile_manage">Yönet</string>
+    <string name="profile_view_all">Tümünü Gör</string>
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_appearance">Görünüm</string>
+    <string name="settings_theme_mode">Tema Modu</string>
+    <string name="settings_theme_dark">Koyu</string>
+    <string name="settings_theme_light">Açık</string>
+    <string name="settings_accent_color">Vurgu Rengi</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_label">Uygulama Dili</string>
+    <string name="settings_language_system">Cihaz Sistem Dili (Otomatik)</string>
+    <string name="settings_notifications">Bildirimler</string>
+    <string name="settings_episode_reminders">Bölüm Hatırlatıcıları</string>
+    <string name="settings_episode_reminders_sub">İzlenen serilerde yeni bölüm yayınlandığında bildir</string>
+    <string name="settings_release_notifications">Yayın Bildirimleri</string>
+    <string name="settings_release_notifications_sub">Sezon başlangıcı ve final uyarıları</string>
+    <string name="settings_default_sorting">Varsayılan Sıralama</string>
+    <string name="settings_default_view">Varsayılan Görünüm</string>
+    <string name="settings_poster_grid">Poster Izgarası</string>
+    <string name="settings_list_view">Liste Görünümü</string>
+    <string name="settings_auto_status">Otomatik Durum Önerileri</string>
+    <string name="settings_auto_status_sub">Son bölümde Tamamlandı olarak işaretlemeyi sor</string>
+    <string name="settings_data">Veri</string>
+    <string name="settings_export">Kitaplığı Dışa Aktar</string>
+    <string name="settings_export_sub">Anime listeni ve izleme listelerini JSON olarak paylaş</string>
+    <string name="settings_import">Kitaplığı İçe Aktar</string>
+    <string name="settings_import_sub">JSON yedeğinden serileri ve izleme listelerini geri yükle</string>
+    <string name="settings_backup">Yedekleme Ayarları</string>
+    <string name="settings_account">Hesap</string>
+    <string name="settings_about">Hakkında</string>
+    <string name="settings_app_version">Uygulama Sürümü</string>
+    <string name="settings_privacy">Gizlilik Politikası</string>
+    <string name="settings_terms">Hizmet Şartları</string>
+    <string name="settings_about_app">AniTrack Hakkında</string>
+</resources>
