@@ -93,7 +93,7 @@ class AniTrackRepositoryTest {
         assertTrue("New user personal library must start empty", allAnime.none { it.inLibrary })
         assertTrue("New user watchlists must start empty", watchlists.isEmpty())
         assertTrue("New user episode history must start empty", history.isEmpty())
-        assertEquals("Anime Fan", profile.displayName)
+        assertEquals(SeedData.defaultProfile.displayName, profile.displayName)
         assertNotNull(allAnime.firstOrNull { it.id == "solo_leveling" })
     }
 

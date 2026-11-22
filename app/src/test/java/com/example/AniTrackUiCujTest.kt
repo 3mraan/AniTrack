@@ -310,7 +310,7 @@ class AniTrackUiCujTest {
         }
         composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Welcome Back").assertIsDisplayed()
-        composeTestRule.onNodeWithTag("auth_tab_create").performClick()
+        composeTestRule.onNodeWithTag("auth_tab_signup").performClick()
         composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Start Your Journey").assertIsDisplayed()
         composeTestRule.onNodeWithTag("auth_google_button").performClick()
@@ -330,13 +330,13 @@ class AniTrackUiCujTest {
         }
         composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("Your Library Starts Fresh").assertIsDisplayed()
-        composeTestRule.onNodeWithTag("tutorial_next_button").performClick()
+        composeTestRule.onNodeWithTag("tutorial_next_btn").performClick()
         composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("How to Add a New Anime").assertIsDisplayed()
-        composeTestRule.onNodeWithTag("tutorial_next_button").performClick()
+        composeTestRule.onNodeWithTag("tutorial_next_btn").performClick()
         composeTestRule.waitForIdle()
         composeTestRule.onNodeWithText("How to Log Watched Episodes").assertIsDisplayed()
-        composeTestRule.onNodeWithTag("tutorial_next_button").performClick()
+        composeTestRule.onNodeWithTag("tutorial_finish_btn").performClick()
         assertTrue(completed)
     }
 }
